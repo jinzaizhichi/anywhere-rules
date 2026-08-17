@@ -43,4 +43,4 @@
 | CDN | 4654 | 59 | SukkaW CDN 直连辅助 | [common/CDN.arrs](./CDN.arrs) |
 | CN_Accelerated | 60276 | 0 | 中国大陆 DNS 加速域名补充 | [common/CN_Accelerated.arrs](./CN_Accelerated.arrs) |
 | GeoIP_CN | 5545 | 0 | GeoIP 中国大陆 IP CIDR | [common/GeoIP_CN.arrs](./GeoIP_CN.arrs) |
-| Geosite_CN | 5231 | 3 | Geosite 中国大陆域名规则 | [common/Geosite_CN.arrs](./Geosite_CN.arrs) |
+| Geosite_CN | 5237 | 3 | Geosite 中国大陆域名规则 | [common/Geosite_CN.arrs](./Geosite_CN.arrs) |
