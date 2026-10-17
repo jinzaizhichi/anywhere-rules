@@ -1,0 +1,28 @@
+# NAME: HK_Bank
+# GENERATED-FOR: Anywhere Routing Rule Set
+# DESCRIPTION: 香港银行与本地支付 (汇丰香港 / 众安ZA / 工银亚洲 / 中银香港 / PayMe / Wise / AlipayHK)
+# RULES: 20
+# SKIPPED: 0
+
+name = HK_Bank
+routing = 1
+2, airstarbank.com
+2, alipayhk.com
+2, antbank.hk
+2, bochk.com
+2, citibank.com.hk
+2, dbs.com.hk
+2, fusionbank.com
+2, hangseng.com
+2, hsbc.com.hk
+2, icbcasia.com
+2, livibank.com
+2, mox.com
+2, payme.hsbc.com.hk
+2, sc.com
+2, transferwise.com
+2, welab.bank
+2, wise.com
+2, wechatpay.com.hk
+2, za.group
+2, zabank.com

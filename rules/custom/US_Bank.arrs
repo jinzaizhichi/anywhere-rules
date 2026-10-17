@@ -1,0 +1,32 @@
+# NAME: US_Bank
+# GENERATED-FOR: Anywhere Routing Rule Set
+# DESCRIPTION: 美国银行与国际数字银行 (Chase / BoA / Citi / 华美 / iFAST Global Bank / PayPal)
+# RULES: 24
+# SKIPPED: 0
+
+name = US_Bank
+routing = 1
+2, aexp-static.com
+2, americanexpress.com
+2, bankofamerica.com
+2, bofa.com
+2, capitalone.com
+2, chase.com
+2, citi.com
+2, citibank.com
+2, citigroup.com
+2, discover.com
+2, eastwestbank.com
+2, ifastcorp.com
+2, ifastgb.com
+2, jpmorgan.com
+2, jpmorganchase.com
+2, mercury.com
+2, paypal.com
+2, paypalobjects.com
+2, sofi.com
+2, usbank.com
+2, velobank.com
+2, venmo.com
+2, wellsfargo.com
+2, zellepay.com

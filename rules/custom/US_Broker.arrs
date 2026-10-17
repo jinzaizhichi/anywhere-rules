@@ -1,0 +1,27 @@
+# NAME: US_Broker
+# GENERATED-FOR: Anywhere Routing Rule Set
+# DESCRIPTION: 美国券商与期权行情工具 (IBKR / Schwab / TradingView / OptionStrat / Barchart / Cboe)
+# RULES: 19
+# SKIPPED: 0
+
+name = US_Broker
+routing = 1
+2, barchart.com
+2, cboe.com
+2, fidelity.com
+2, firstrade.com
+2, ibkr.com
+2, ibllc.com
+2, interactivebrokers.com
+2, optionstrat.com
+2, robinhood.com
+2, schwab-global.com
+2, schwab.com
+2, schwabapi.com
+2, tastytrade.com
+2, tastyworks.com
+2, tdameritrade.com
+2, thinkorswim.com
+2, tradingview.com
+2, webull.com
+2, webullfinance.com

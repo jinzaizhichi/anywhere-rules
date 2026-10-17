@@ -1,0 +1,28 @@
+# NAME: HK_Broker
+# GENERATED-FOR: Anywhere Routing Rule Set
+# DESCRIPTION: 香港券商 (富途 / 长桥 / 盈透香港 / 老虎 / 华盛 / 盈立)
+# RULES: 20
+# SKIPPED: 0
+
+name = HK_Broker
+routing = 1
+2, bsgroup.com.hk
+2, chiefgroup.com.hk
+2, futu5.com
+2, futuhk.com
+2, futunn.com
+2, futusecurities.com
+2, hstong.com
+2, interactivebrokers.com.hk
+2, itiger.com
+2, laohu8.com
+2, lbkrs.com
+2, longbridge.com
+2, longbridge.hk
+2, longbridgeapp.com
+2, moomoo.com
+2, tigerbrokers.com.hk
+2, usmart.hk
+2, usmartsecurities.com
+2, vbkr.com
+2, wbrks.com
