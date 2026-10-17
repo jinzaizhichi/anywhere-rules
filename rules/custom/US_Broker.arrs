@@ -5,7 +5,7 @@
 # SKIPPED: 0
 
 name = US_Broker
-routing = 1
+# routing = 1
 2, barchart.com
 2, cboe.com
 2, fidelity.com
