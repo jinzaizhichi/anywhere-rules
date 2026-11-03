@@ -2,11 +2,15 @@ name: Sync and Merge Upstream
 
 on:
   schedule:
-    - cron: '30 1 * * *'   # 每天北京时间 09:30 自动运行
-  workflow_dispatch:     # 支持在 GitHub 网页端手动点击运行
+    - cron: '30 1 * * *'   # 每天北京时间 09:30
+  workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: sync-upstream
+  cancel-in-progress: false
 
 jobs:
   sync:
@@ -21,14 +25,27 @@ jobs:
 
       - name: Sync main and merge into custom
         run: |
-          git config user.name ”github-actions[bot]“
-          git config user.email ”github-actions[bot]@users.noreply.github.com“
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git remote add upstream https://github.com/chikacya/anywhere-rules.git
           git fetch upstream main
 
-          # 1. 让你的 main 分支保持与上游 100% 一致
-          git push origin refs/remotes/upstream/main:refs/heads/main —force
+          # 1. main 与上游保持一致
+          git push origin refs/remotes/upstream/main:refs/heads/main --force
 
-          # 2. 将上游 main 的最新改动自动合并到你的 custom 分支
-          git merge upstream/main —no-edit -m ”chore: merge upstream main into custom“
+          # 2. 有新提交才合并
+          if git merge-base --is-ancestor upstream/main HEAD; then
+            echo "custom 已包含上游最新改动，无需合并"
+            exit 0
+          fi
+
+          # 3. 合并，冲突时给出明确提示
+          if ! git merge upstream/main --no-edit -m "chore: merge upstream main into custom"; then
+            echo "::error::合并上游时发生冲突，请手动解决 custom 分支"
+            git merge --abort
+            exit 1
+          fi
+
           git push origin custom
