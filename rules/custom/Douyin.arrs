@@ -415,3 +415,22 @@ routing = 1
 2, zlinkurl.com
 3, amemv
 3, douyin
+# 抖音商城/电商补充后缀
+2, jinritemai.cn
+2, jinritemai-inc.cn
+2, douyinec.cn
+2, douyinpay.cn
+2, douyinmall.com
+2, douyinshop.com
+2, ecombdapi.cn
+2, ecombdimg.cn
+2, ecombdstatic.cn
+2, ecombdvod.cn
+2, byteecom.com
+2, byte-ecom.com
+
+# 电商与字节核心关键词兜底
+3, ecombd
+3, jinritemai
+3, zijie
+3, byteimg
